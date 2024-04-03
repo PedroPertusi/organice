@@ -1,4 +1,5 @@
-# organice
+# Organice
+### By: Pedro Pertusi & João Alfredo Lamy
 
 ## Descrição Geral
 
