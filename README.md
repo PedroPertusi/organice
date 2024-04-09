@@ -18,6 +18,9 @@ Repositório com as configurações do Docker para a orquestração dos containe
 ### [organice-discovery](https://github.com/alfredjynx/organice-discovery.git)
 Serviço responsável pelo registro e descoberta dos microserviços, possibilitando a comunicação interna eficiente.
 
+### [organice-ops](https://github.com/alfredjynx/organice-ops.git)
+Repositório com as configurações do Jenkins.
+
 ### Autenticação
 - [organice-auth](https://github.com/alfredjynx/organice-auth.git): Serviço para autenticação de usuários, incluindo login e geração de tokens de acesso.
 - [organice-auth-resource](https://github.com/alfredjynx/organice-auth-resource.git): Contém os recursos associados ao serviço de autenticação.
