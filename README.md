@@ -30,6 +30,10 @@ Serviço responsável pelo registro e descoberta dos microserviços, possibilita
 - [organice-lembrete](https://github.com/alfredjynx/organice-lembrete.git): Permite a criação e listagem de lembretes, integrando-os ao sistema de agenda.
 - [organice-lembrete-resource](https://github.com/alfredjynx/organice-lembrete-resource.git): Oferece os recursos relacionados aos lembretes.
 
+### Dias
+- [organice-dia](https://github.com/PedroPertusi/organice-dia.git): Permite a criação e listagem de dias, integrando-os ao sistema de agenda.
+- [organice-dia-resource](https://github.com/PedroPertusi/organice-dia-resource.git): Oferece os recursos relacionados aos dias.
+
 ## Instruções de Instalação e Execução
 
 Para facilitar a instalação e execução dos serviços, utilize o Docker e o Docker Compose seguindo os passos abaixo.
