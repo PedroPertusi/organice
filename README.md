@@ -37,6 +37,10 @@ Repositório com as configurações do Jenkins.
 - [organice-dia](https://github.com/PedroPertusi/organice-dia.git): Permite a criação e listagem de dias, integrando-os ao sistema de agenda.
 - [organice-dia-resource](https://github.com/PedroPertusi/organice-dia-resource.git): Oferece os recursos relacionados aos dias.
 
+### Semanas (WIP)
+- [organice-semana](https://github.com/PedroPertusi/organice-semana.git): Permite a criação e listagem de semanas, integrando-os ao sistema de agenda.
+- [organice-semana-resource](https://github.com/PedroPertusi/organice-semana-resource.git): Oferece os recursos relacionados as semanas.
+
 ## Instruções de Instalação e Execução
 
 Para facilitar a instalação e execução dos serviços, utilize o Docker e o Docker Compose seguindo os passos abaixo.
