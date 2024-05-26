@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "f7c5bc90-0f49-44d4-96b0-4f14b2542cae",
+		"name": "Projeto-Humberto-Loja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23129826",
+		"_collection_link": "https://universal-equinox-259185.postman.co/workspace/Organice~e528034c-aad9-4315-b4e9-8c0ca32fd1f8/collection/23129826-f7c5bc90-0f49-44d4-96b0-4f14b2542cae?action=share&source=collection_link&creator=23129826"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Matheus Aguiar\",\r\n    \"email\": \"matheusaguiari\",\r\n    \"password\": \"1234567@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"pedro\",\r\n    \"password\": \"1234567@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Accounts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJkMTRiNDFiMy04NDY0LTQxNGUtYjg4MS0xNDVkMGU2ZDc2MzciLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJQZWRybyBQZXJ0dXNpIiwicm9sZSI6InJlZ3VsYXIiLCJuYmYiOjE3MTY0ODY4MzIsImV4cCI6MTc0ODAyMjgzMn0.Da__XexCZP9vuM1NPc2wqN7T1TJmsHQ7w-AM5TVB3TPVwxDq5FDPRnqrL204SPelwbz8f9cUcxlpJrejU_Z5AA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI2NzllYWM1MS0xMDhjLTQyNGYtYTBkNC1iZjUyZDIzMzA0ODMiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJFZHVhcmRvIFZheiBkZSBNb3JhZXMgQ2Fkb3JuaWdhIiwicm9sZSI6InJlZ3VsYXIiLCJuYmYiOjE3MTIxNzU0MzUsImV4cCI6MTc0MzcxMTQzNX0.x7RauTJ9na9lv77p0OYSANqinDz1ysvRq9R9ND9vezS9Aht0qryd_ZMSCoGWqshh3I__tgK5DTGdhGFSLs_e7A"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lembrete Teste",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIzNWY5M2QxYS1kMDQ3LTQ2YzgtOTI0Yi1hZmEyMmRkNjVmZjAiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNTQwNzYyLCJleHAiOjE3NDUwNzY3NjJ9.cXR-5sj0c2FdCI8my4WgFynJ-qRcUZonpUtrH1zB1oeXbaDo0EeRNEm2fF4v4w-3arVL1RNAqZHYEOjb4Tp4Mg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/lembretes/teste",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lembretes",
+						"teste"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Lembrete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIzNWY5M2QxYS1kMDQ3LTQ2YzgtOTI0Yi1hZmEyMmRkNjVmZjAiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNTQwNzYyLCJleHAiOjE3NDUwNzY3NjJ9.cXR-5sj0c2FdCI8my4WgFynJ-qRcUZonpUtrH1zB1oeXbaDo0EeRNEm2fF4v4w-3arVL1RNAqZHYEOjb4Tp4Mg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Dia do Alexandre Magno\",\r\n    \"description\": \"alexandremagno day\",\r\n    \"inicio\": \"19-Apr-2024\",\r\n    \"fim\": \"19-Apr-2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/lembretes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lembretes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lembrete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIzNWY5M2QxYS1kMDQ3LTQ2YzgtOTI0Yi1hZmEyMmRkNjVmZjAiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNTQwNzYyLCJleHAiOjE3NDUwNzY3NjJ9.cXR-5sj0c2FdCI8my4WgFynJ-qRcUZonpUtrH1zB1oeXbaDo0EeRNEm2fF4v4w-3arVL1RNAqZHYEOjb4Tp4Mg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/lembretes/220c46ec-a3d7-4bfb-82b1-4c7cce44b78c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lembretes",
+						"220c46ec-a3d7-4bfb-82b1-4c7cce44b78c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lembrete Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIzNWY5M2QxYS1kMDQ3LTQ2YzgtOTI0Yi1hZmEyMmRkNjVmZjAiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNTQwNzYyLCJleHAiOjE3NDUwNzY3NjJ9.cXR-5sj0c2FdCI8my4WgFynJ-qRcUZonpUtrH1zB1oeXbaDo0EeRNEm2fF4v4w-3arVL1RNAqZHYEOjb4Tp4Mg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id-user",
+						"value": "35f93d1a-d047-46c8-924b-afa22dd65ff0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"19-Apr-2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/lembretes/data",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lembretes",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Dia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5N2ZkYzU0ZS02NWYxLTQwZGYtYTQxMS1lNThkNmFjNTY2NWIiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNDQzNTA5LCJleHAiOjE3NDQ5Nzk1MDl9.fzAl7yiLebok0qugJbwJ4uSRYPy-psxM45V5qWT0qM2VSaHLwtLhSfS8up_baSKmh3RoXkdZR8B8VfY-B8p3cg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id-user",
+						"value": "8fe8c28c-63b8-4b4c-ae91-91cb3da30b60",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dia\": \"19-Apr-2024\",\r\n    \"descricao\": \"juazeiro do norte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data Lembrete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5N2ZkYzU0ZS02NWYxLTQwZGYtYTQxMS1lNThkNmFjNTY2NWIiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEzNDQzNTA5LCJleHAiOjE3NDQ5Nzk1MDl9.fzAl7yiLebok0qugJbwJ4uSRYPy-psxM45V5qWT0qM2VSaHLwtLhSfS8up_baSKmh3RoXkdZR8B8VfY-B8p3cg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id-user",
+						"value": "8fe8c28c-63b8-4b4c-ae91-91cb3da30b60",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"19-Apr-2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dia/lembretes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dia",
+						"lembretes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiMjQ2Y2Q1OS1jNzBiLTRhYjItYTMzMC1jODM4ZWM2ZTM0YmQiLCJpc3MiOiJJbjVwRXIiLCJzdWIiOiJNYXRoZXVzIEFndWlhciIsInJvbGUiOiJyZWd1bGFyIiwibmJmIjoxNzEyNjI0MzQ4LCJleHAiOjE3NDQxNjAzNDh9.fItB1CR-x-a0QyiPuHrqsvjrEP_kKtU4SIP-x6wgWedNFCNCILNAD_4gZi2D9oNqDxsbcN0x-CG8eBSiNGzp5A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id-user",
+						"value": "8fe8c28c-63b8-4b4c-ae91-91cb3da30b60",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"2024-04-08\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dia/lembretes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dia",
+						"lembretes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
