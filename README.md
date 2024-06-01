@@ -10,15 +10,19 @@ O Organice é um sistema de agenda que imita as funcionalidades conhecidas do No
 A arquitetura do Organice é baseada em microserviços, cada um com sua responsabilidade única dentro do sistema. Abaixo estão os microserviços que compõem o sistema:
 
 ### [organice-gateway](https://github.com/alfredjynx/organice-gateway.git)
+
+![](image-1.png)
 Gateway padrão do sistema, encarregado de rotear as requisições para os microserviços apropriados.
 
 ### [organice-docker-api](https://github.com/alfredjynx/organice-docker-api.git)
 Repositório com as configurações do Docker para a orquestração dos containers do sistema Organice.
 
 ### [organice-discovery](https://github.com/alfredjynx/organice-discovery.git)
+![alt text](image-2.png)
 Serviço responsável pelo registro e descoberta dos microserviços, possibilitando a comunicação interna eficiente.
 
 ### [organice-ops](https://github.com/alfredjynx/organice-ops.git)
+![alt text](image-4.png)
 Repositório com as configurações do Jenkins.
 
 ### Autenticação
@@ -26,6 +30,9 @@ Repositório com as configurações do Jenkins.
 - [organice-auth-resource](https://github.com/alfredjynx/organice-auth-resource.git): Contém os recursos associados ao serviço de autenticação.
 
 ### Contas
+
+![](image.png)
+
 - [organice-account](https://github.com/alfredjynx/organice-account.git): Gerencia a criação e listagem de contas de usuários.
 - [organice-account-resource](https://github.com/alfredjynx/organice-account-resource.git): Fornece os recursos para o serviço de contas.
 
@@ -56,6 +63,8 @@ Certifique-se de que você tenha instalado:
 ### Executando os serviços com Docker
 
 1. Clone o repositório `organice-docker-api`:
+
+![alt text](image-3.png)
 
 ```bash
 git clone https://github.com/alfredjynx/organice-docker-api.git
